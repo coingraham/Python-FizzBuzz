@@ -1,13 +1,21 @@
-number = int(input("Please choose a number: "))
+number = int(input("please enter a number: "))
 
-if number % 3 == 0 and number % 5 == 0:
-    print("FizzBuzz")
-elif number % 3 == 0:
-    print("Fizz")
-elif number % 5 == 0:
-    print("Buzz")
-else:
-    print(number)
+FizzBuzz = False
+
+while not FizzBuzz:
+    number = int(input("please enter a number: "))
+    num = number
+    if num % 3 == 0 and num % 5 == 0:
+        FizzBuzz = True
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+   
+        
 
 
     
